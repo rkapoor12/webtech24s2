@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Image Maps or Hotspots</title>
+
+	<style type="text/css">
+	/* Your styles go here */
+	/*this is how I write comments in CSS*/
+
+	P,h1{text-align: center}
+	p{border: 5px solid green}
+	/*add a border color to the paragraph, it is a block tag. Images are not blocks */
+	body{/*background-color:aquamarine*/
+	/*this is how you add a background color to the website*/
+		background-image:url(music.gif);
+		background-repeat:repeat;
+		background-position:center; 
+		background-attachment:fixed;}
+		/*background does not move if it is fixed*/
+		img{/*float:right;*/}
+		/*float image to the right until the second image stops*/
+		img#b{/*float:left;*/border: 5px ridge red;width:40%;
+			margin-left:100px;padding:50px;
+			position:absolute; top:400px;left:500px;}
+			/*positon is absolute (that image will sit on top of the other_), it measures 400 px from the top and measure 500 px from the left */ 
+			/*image floats down to a place where the paragraph block does not occupy*/
+			/*a paragraph is a block tag*/
+			/*margin is controlling the outside border whereas padding is controlling the inside border of the image*/
+			h2{font-weight:bold;font-style:italic;color:yellow; font-size:4em;position:absolute;top:400px;left:500px;z-index:1}
+	</style>
+	
+	
+	
+  </head>
+
+  <body>
+	<!-- Your HTML goes here -->
+		<!--Anything here will not be displayed. 
+		You can use this to take notes or make comments that I can read if I want to -->	
+
+		<h1> Image Hotspots or Image Maps </h1>
+
+		<map name="middlesex" id="M">
+			
+			<area shape="rect", coords="301,351,330,383" href="https://www.wellesleyma.gov" alt = "Wellesley Site" />
+			<!--this is your grid --> 
+
+		</map>
+		<p>
+
+		<img src="Middlesex.gif" alt = "Middlesex County Map" title = "Middlesex County" usemap="#middlesex"/>
+		<!--this is your image. Usemap links it to the line of code above-->
+		</p>
+		<h2>Go Babson!!!</h2>
+		<img id="b" src="beaver.jpg" alt="Beaver Image" title="Babson Beavers"/>
+		
+
+
+
+
+
+
+
+	
+  </body>
+</html>
