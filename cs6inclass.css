@@ -1,0 +1,10 @@
+table,td{border:2px solid black} /*td is for cells within the table */
+td
+table{font-family:'Times New Roman', Times, serif;text-align:center;width:70%;margin-right:auto; margin-left:auto;background:url(music.gif);margin-top:5%; border-collapse: collapse;}
+
+tr#r1{font-weight:bold;background-color: red;}
+
+.C1{width:30%}
+.C2{width:45%}
+.C3{background-color:pink;}
+caption{font-weight:bold;font-family:sans-serif; color:navy; font-size:4em; margin-bottom:2%}
