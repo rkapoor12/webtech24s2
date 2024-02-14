@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title> CS9 Class</title>
+
+	<style>
+	/* Your styles go here */
+        h1 {font-family:Arial, Helvetica, sans-serif; color:navy; text-align:center;}
+        form {background-color:silver; font-family:Arial; 
+              width:50%; margin-right:auto; margin-left:auto; 
+                color:navy;
+                padding-top:3%; padding-bottom:3%; padding-left:8%;}
+		
+	
+	</style>
+	<script type="text/javascript">	
+		
+
+	</script>
+	
+	
+  </head>
+
+  <body>
+	<!-- Your HTML goes here -->
+    <h1> A Simple HTML Form </h1>
+		<form method="post" action="">
+            <!-- This is a simple text box -->
+			<p>
+				First Name: &nbsp; &nbsp;
+				<input type="text" name="myname" size="20"  placeholder="Enter First Name"/>
+                Last Name: &nbsp; &nbsp;
+				<input type="text" name="myname" size="20"  placeholder="Enter Last Name"/>
+			</p>
+            <p>
+				Age: &nbsp; &nbsp;
+				<input type="text" name="myage" size="10"  placeholder="Enter Age"/>
+			</p>
+            <!-- This is a drop down menu -->
+            <p>
+                Please select the state you are from: 
+                <select name="Please select a state">
+                    <option value="Empty">Please Select a State</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="ME">Maine</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="VT">Vermont</option>
+                </select>
+            </p>
+            <!-- Building a radio button -->
+            <p>
+                Please select your gender:
+                <input type="radio" name="mygender" value="Male"/> Male &nbsp; &nbsp;
+                <input type="radio" name="mygender" value="Female"/> Female &nbsp; &nbsp;
+        
+            </p>
+            <!-- This is a check box -->
+            <p>
+                Which topic in Webtech do you like (please select all that apply): <br/>
+                <input type="checkbox" name="mymags" value="HTML"/> HTML <br/>
+                <input type="checkbox" name="mymags" value="CSS"/> CSS <br/>
+                <input type="checkbox" name="mymags" value="JavaScript"/> JavaScript<br/>
+                <input type="checkbox" name="mymags" value="jQuery"/> jQuery<br/>
+            </p>
+            <p>
+                Please provide any additional comments you might have: <br/>
+                <textarea name="mysuggs" cols="40" rows="5" placeholder="Enter comments here"></textarea>
+            </p>
+            <p>
+                <input type="submit" name="Submit" value="Go!"/> &nbsp; &nbsp;
+                <input type="reset" name="Reset" value="Oh No!"/>
+            </p>
+
+
+
+
+		</form>
+	
+	
+  </body>
+</html>
