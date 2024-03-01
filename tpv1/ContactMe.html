@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<link rel="stylesheet" href="Menu.css" type="text/css">
+	</head>
+	<title>Contact Me</title>
+
+	<style>
+	/* Your styles go here */
+	
+	h1#ContactMe{font-family:Georgia, 'Times New Roman', Times, serif;color:red;text-align:center;}
+		form{background-color:silver;font-family:Arial;width:60%;margin-right:auto;margin-left:auto;color: navy
+		;border:2px dotted magenta;padding-top:1%; padding-left:3%}
+		p
+		/*form will be in the center, form is a block tag*/
+
+
+
+
+	</style>
+	
+	
+	
+  </head>
+
+  <body>
+	<!-- Your HTML goes here -->
+<!--FOR THE MENU BOARD* (DO NOT EDIT)-->
+<div id="banner">
+	<h1 id="Menuheading">Riya's Travel Diary</h1>
+
+
+</div>
+
+<div id="mbar">
+	<a href="index.htm" class="menu">Home</a>
+	<a href="AboutMe.htm" class="menu">About Me</a>
+	<div class="menu">Bali</a> 
+		<ul>
+			<li> <a href="Bali.htm">Read Me First</a></li>
+			<li> <a href="NusaPenida.htm"> Nusa Penida</a></li>
+			<li> <a href="LovinaBeach.htm"> Lovina Beach</a></li>
+		</ul>
+	</div>
+	<div class="menu"> Barcelona</a> 
+		<ul>
+			<li> <a href="Barcelona.htm">Read Me First</a></li>
+			<li> <a href="SagradaFamilia.htm">La Sagrada Familia</a></li>
+			<li> <a href="BoqueriaMarket.htm"> La Boqueria Market </a></li>
+		</ul>
+	</div>
+	<div class="menu">Flores</a> 
+		<ul>
+			<li> <a href="Flores.htm">Read Me First </a></li>
+			<li> <a href="KomodoDragon.htm">Komodo Dragon Island</a></li>
+			<li> <a href="Padar Island.htm"> Padar Island and Pink Beach</a></li>
+		</ul>
+	</div>
+	<a href="ContactMe.html" class="menu">Contact Me</a>
+	<a href="Sitemap.htm" class="menu">Sitemap</a>
+	<a href="Credits.htm" class="menu">Credits</a>
+</div>
+<!--FOR THE MENU BOARD* (DO NOT EDIT)-->
+	<h1 id="Contact Me"> Contact Me</h1>
+		<form method="post" action="">
+			<!--This is a simple textbox-->
+			<p>
+				Please Enter Your Name:
+				<input type="text" name="myname" size="20"
+				maxlength="40" placeholder="EnterName">
+				<!--20 characters at a time you can see, and max characters is 40-->
+			</p>
+            <p> Please enter your email</br>
+				<textarea name="mysuggs" cols="60" rows="1" placeholder="Enter email address"></textarea>
+			</textarea> 
+			</p>
+			<!--This is a drop drown menu-->
+			<p> 
+				Please select your Age: 
+				<select name="myclass">
+					<option value="Teenager">10-20</option>
+					<option value="Young Adult">20-30</option>
+					<option value="Adult">30-50</option>
+					<option value="Senior">50+</option>
+	
+				</select>
+		
+			</p>
+
+			<p> 
+				<!--Building a radio button-->
+				Please select your gender:
+				<input type="radio" name="mygender" value="female"/>
+				<input type="radio" name="mygender" value="male"/>
+				<input type="radio" name="mygender" value="other"/>
+			</p>
+				<!--This is a check box-->
+
+
+			<p> Please enter your questions/comments</br>
+				<textarea name="mysuggs" cols="40" rows="5" placeholder="Enter Comments here"></textarea>
+			</textarea> 
+			</p>
+			<p> 
+				<input type="submit" name="submit" value="sumbit data"> &nbsp; &nbsp;
+				<input type="reset" name="reset" value="Clear Data"/>
+
+			</p>
+
+			
+
+		</form>
+	
+	
+  </body>
+</html>
