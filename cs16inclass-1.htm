@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+	    <title>CS16-Processing Form Inputs</title>
+        <style type="text/css">
+            form {margin-left:200px; margin-right:200px; padding:30px;
+                  font-family:Arial; font-weight:bold; background-color:Silver;}
+            h1 {text-align:center; font-family: Arial Baltic;}
+        </style>
+
+        <script type="text/javascript">
+          function showResult()
+          {
+            event.preventDefault();
+            var myf, myname, myage, mysex, mylevel, mycolor; 
+            myf=document.getElementById("dafrm");
+            myname=myf.name.value; 
+            myage=myf.age.value;
+            mysex=myf.sex.value;
+            mylevel=myf.level.value; 
+            mycolor=myf.colors.value;
+        
+            mylevel=mylevel.toLowerCase();
+
+            if(myname=="")
+            {
+                alert("Please enter your name");
+
+            }
+            else if ((myage=="") || (isNaN(myage)==true))
+            {
+                alert("Please enter your age that is numerical");
+            }
+            else if(mysex=="null")
+            {
+                alert("Please choose a value from the dropdown list");
+            }
+            else if (mycolor=="null")
+            {
+                alert("Please choose a color for the form");
+            }
+            else if ((mylevel !="freshperson")&&(mylevel !="sophomore")&&(mylevel !="junior")&&(mylevel !="senior"))
+            {
+                alert("Please enter one of freshperson, sophomore, junior, or senior");
+            }
+            else
+            {
+                myf.result.value="My name is "+ myname+"and I am "+myage+" years old " +mysex+ " " + mylevel; 
+                myf.style.backgroundColor=mycolor; 
+
+            }
+
+
+
+
+          }   
+
+        </script>
+        
+    </head>
+
+    <body>
+	    <!-- Your HTML goes here -->
+        
+        <h1>Processing form inputs</h1>
+        <form id="dafrm" action="" method="post">
+            <p>
+                Enter your name: <input type="text" name="name" size="40" /> &nbsp;&nbsp;
+                Enter your age : <input type="text" name="age" size="4" />
+            </p>
+            <p> 
+                Select your gender: &nbsp;
+                <select name="sex">
+                    <option value="null"> Please select...</option>
+                    <option value="Female"> Female </option>
+                    <option value="Male"> Male </option>
+                </select>
+            </p>
+            <p>
+                Enter your college level: <input type="text" name="level" size="20" placeholder="freshperson, sophomore, etc."/>
+            </p>
+            <p>
+                Select the color you want for the form: &nbsp;
+                <select name="colors">
+                    <option value="null"> Please select a color</option>
+                    <option value="green">green</option>
+                    <option value="blue">blue</option>
+                    <option value="yellow">yellow</option>
+                </select>
+            </p>
+            <p> 
+                Your selections will appear here: <br />
+                <textarea name="result" cols="40" rows="3"></textarea>
+            </p>
+            <p>
+                <input onclick="showResult()" type="submit" name="submit" value="Show Me" style="width:100px;height:40px" />
+                &nbsp;&nbsp;
+                <input type="reset" name="reset" value="Clear Me" style="width:100px;height:40px" />
+            
+            </p>
+
+        </form>
+    
+    </body>
+</html>
