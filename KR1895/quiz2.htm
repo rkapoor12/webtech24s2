@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+	    <title>Quiz 2</title> <!-- No credit if you do, -1 if you do not -->
+        <style type="text/css">
+         
+         h1#Facebook{font-family:arial;background: url(facebook.png);color:yellow;
+            margin-left: 200px; margin-right: 200px;text-align:center}
+            form{background-color: silver;font-family:arial; color:navy;
+                margin-left:300px;margin-right:300px;
+                padding-left:100px;padding-top:50px;padding-bottom:50px}
+        
+                #A2{ list-style-type: lower-greek;}
+                #A1{list-style-image: url("star.gif");}
+        </style>
+        
+    </head>
+
+    <body>
+	    <!-- Your HTML goes here -->
+        <!-- The title, About Facebook must use h1 tag -->
+        <!-- It uses Arial font, yellow color. (1) -->
+        <!-- It must have the image facebook.png as the background. (2)-->
+        <!-- There must be a 200px (white) space to the left and right (1)-->
+          
+        <h1 id="Facebook"> About Facebook </h1>
+        <!-- Below the title, construct the form shown on screen (7)--> 
+        <!-- 1. The form has a text box to capture your name - size is 20 -->
+        <!-- 2. The form has a radio button to capture whether you like -->
+        <!--    Facebook. Yes and No options. -->
+        <!-- 3. The form has a dropdown to see how many times a day you access -->
+        <!--    FB. The three values are 100, 50, and 25. -->
+        <!-- 4. The form has a Submit Data and a Clear Data button to submit -->
+        <!--    and reset the form data respectively. -->
+        <!--    The form has a silver background, navy font, arial. (2)-->
+        <!--    The form has a 300px white space to the right and left.(2)-->
+        <!--    The form has a 100px silver space to the left. (1)-->
+        <!--    The form has a 50px silver space to the top and bottom. (2)-->
+            
+        <!-- For the last 5 points do the following: -->
+        <!-- Create a nested list using the data given.-->
+        <!-- The outer list must be unordered -(1)-->
+        <!-- It must use the image star.gif as the bullet. (2)-->
+        <!-- The inner list must be ordered with small greek numbering.(2)-->
+        <!-- This h1 must not have any background or color. -->
+        <!-- No styles needed. In other words, don't touch it. -->
+        <form method="post" action="">
+
+            <p>
+                Your name: <input type="text" name="frame" size="20" maxlength="25">
+            </p>
+            <p>
+                Do you like Facebook: &nbsp; 
+                Yes<input type="radio" value="Yes" name="action">
+                No<input type="radio" value="No" name="action">
+            </p>
+            <p>
+                How many times a day do you access facebook: 
+                <select name="number">
+                    <option value="100"> 100</option>
+                    <option value="50"> 50</option>
+                    <option value="25"> 25 </option>
+                </select>
+            </p>
+            <p>
+                <input id=submit type="submit" name="submit" value="Submit Data"/>
+                <input id=reset type="Reset" name="reset" value="Clear Data"/>
+            </p>
+
+        </form>
+        
+        <h1> Courses offered in Babson</h1>
+           
+        <ul>
+        <li id="A1">Management Courses</li>
+            <ol>
+               <li id="A2">FME</li> 
+              <li id="A2">SME</li> 
+            </ol>
+        <li id="A1">Liberal Arts Courses</li> 
+            <ol>
+                <li id="A2">FCI</li>
+               <li id="A2">Critical Race </li> 
+            </ol>
+        </ul>    
+    
+    </body>
+</html>

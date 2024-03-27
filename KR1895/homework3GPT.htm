@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Homework 3 - processing forms</title>
+    <style>
+        /* Your styles go here */
+        form {
+            background-color: silver;
+            font-family: Arial;
+            color: Navy;
+            padding-left: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 60%;
+        }
+
+        .but {
+            width: 200px;
+            height: 60px;
+            background-color: magenta;
+            color: black;
+        }
+
+        p#desc {
+            margin: 50px 200px;
+            font-family: cursive;
+        }
+
+        h3 {
+            font-family: lucida handwriting;
+            font-size: 3em;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function calculateAmountDue() {
+            var product = document.getElementsByName("product")[0].value.toLowerCase();
+            var quantity = parseFloat(document.getElementsByName("quantity")[0].value);
+            var amountDueField = document.getElementsByName("AmtDue")[0];
+
+            var cost;
+
+            switch (product) {
+                case "milk":
+                    cost = 3.50;
+                    break;
+                case "apple":
+                    cost = 0.99;
+                    break;
+                case "fish":
+                    cost = 5.99;
+                    break;
+                default:
+                    alert("Invalid product. Please enter Milk, Apple, or Fish.");
+                    return;
+            }
+
+            if (isNaN(quantity) || quantity < 0) {
+                alert("Please enter a valid quantity.");
+                return;
+            }
+
+            var amountDue = cost * quantity;
+            amountDueField.value = "$" + amountDue.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+<!-- Your HTML goes here -->
+<h3> Homework 3 GPT</h3>
+<p id="desc">
+    The form given below has 3 fields. Let us assume that the user will type in
+    the name of one of 3 products: Milk, Apple, or Fish. The user may enter these 
+    using any mix of cases, so be aware. You need to check to ensure that the user
+    enters a value. If it is not one of these 3, let the user know. 
+    Then the user will enter a quantity. You need to check to ensure that a quantity is entered 
+    (you may assume that 0 is a valid quality) and that the value is numeric. 
+    Once validated, use the following costs - 1 bottle of milk is $3.50; one 
+    apple is $0.99 and one pound of fish is $5.99 - and show the amount owed
+    in the third field. All of this should be done when the appropriate 
+    button is pressed. The amount must be shown with 2 decimal places and prefixed with
+    a $ (dollar) sign.     
+</p>
+<form action="#" method="POST" onsubmit="event.preventDefault(); calculateAmountDue();">
+    <p>
+        <input type="text" name="product" size="20" placeholder="Enter product..." />
+        &nbsp; &nbsp;&nbsp;
+        <input type="text" name="quantity" size="20" placeholder="Enter quantity.." />
+    </p>
+    <p>
+        <input type="text" name="AmtDue" size="20" placeholder="show amount due" />
+    </p>
+    <p>
+        <input class="but" type="submit" name="submit" value="What Do I Owe" />
+        &nbsp; &nbsp;&nbsp;
+        <input class="but" type="reset" name="reset" value="Clear All" />
+    </p>
+</form>
+<!-- Reflection -->
+<h2>Reflection</h2>
+<p>I only used one iteration which were your instructions as stated. </p>
+
+<p>There are many differences between my homework and the chatGPT homework. Firstly, in  my code, 
+	the inputs (product,quantity, and Amount Due) are retrieved directly from the form elements (myf.product.value, myf.quantity.value, and
+     myf.AmtDue.value). However, in the chatGPT code, the inputs are retrieved using document.getElementsByName() to select the
+    specific form elements. Both codes calculate the amount due based on the selected product and quantity entered by the user. 
+    However, they use different techniques for this calculation. In my code, it's done through a series of if-else statements.
+	In the chatGPT code, a switch statement is used for this purpose. Personally, I like my code alot more because it is much
+    simpler to understand and is more straightforward compared to the chatGPT code. 
+ </p>
+	
+	
+
+
