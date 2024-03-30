@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Change the Title, Please</title>
+	<style>
+        p, h3 {text-align:center;}
+        img {width:30%;border-width:10px;border-style:ridge;}
+        button {width:150px; height:40px; 
+                background-color:green;; font-family:arial; 
+                color:yellow;}
+        div#b{text-align:center;}
+	</style>
+    
+    
+    <script type="text/javascript">
+        var mypics=new Array("tiger5-1.jpg","tiger6-1.jpg","tiger7-1.jpg","tiger8-1.jpg"); 
+        var c;
+        c=0; 
+
+        function showSlides()
+        {
+            const myimg = document.getElementById("daimg");
+            myimg.src=mypics[c];
+            c = c+1 ;
+            if(c>mypics.length -1)
+            /*my pics.length will give you number the number of picture*/
+            {
+                c=0;
+
+            }
+
+            setTimeout("showSlides()",1000);
+
+
+        }
+        
+    </script>
+</head>
+<body onload="showSlides()">
+    <p>
+    
+    <img id="daimg" src="tiger5.jpg" alt="Slide Show of Tigers" title="Tigers"/>
+    
+    </p>
+    <h3 id="h"></h3>
+    <!-- The above h3 will be used for showing a caption, if needed.-->
+    <div id="b">
+        <button>Click to stop/resume</button>
+    </div>
+     
+</body>
+</html>
