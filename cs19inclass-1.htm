@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Change the Title, Please</title>
+	<style>
+        p, h3 {text-align:center;}
+        img {width:30%;border-width:20px;border-style:ridge;padding:20px;}
+        button {width:150px; height:40px; 
+                background-color:green;; font-family:arial; 
+                color:yellow;}
+        div#b{text-align:center;}
+	</style>
+    
+    
+    <script type="text/javascript">
+        var mypics=new Array("tiger5-1.jpg","tiger6-1.jpg","tiger7-1.jpg","tiger8-1.jpg"); 
+        var mytext= new Array("This is Webtech", "This is fun", "Teach me everything", "Under the Sun");
+        var mycols= new Array("blue","green","red","pink","magenta", "orange");
+        var c,d;
+        c=0; /*this counter serves both pics and captions */ /*intialize to start on 0*/
+        d=0; /*this counter is for my colors*/ 
+        e=0; /*this counter is for my captions*/
+
+        function showSlides()
+        {
+            const myimg = document.getElementById("daimg");
+            const mycap=  document.getElementById("h");
+            myimg.src=mypics[c]; /*set to first image*/
+            mycap.innerHTML=mytext[c];
+            myimg.style.borderColor=mycols[d];
+            c = c+1 ; /* This is the same as ++c */
+            if(c>mypics.length -1)
+            /*my pics.length will give you number the number of picture*/
+            {
+                c=0;
+
+            }
+            ++d;
+            if (d>mycols.length-1)
+            {
+                d=0;
+            }
+            ++e;
+            if(e>mytext.length -1)
+            {
+                e=0;
+
+            }
+            setTimeout("showSlides()",1000);
+
+
+        }
+        
+    </script>
+</head>
+<body onload="showSlides()">
+    <p>
+    
+    <img id="daimg" src="tiger5.jpg" alt="Slide Show of Tigers" title="Tigers"/>
+    
+    </p>
+    <h3 id="h"></h3>
+    <!-- The above h3 will be used for showing a caption, if needed.-->
+     
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Change this title</title>
+
+	<style>
+	/* Your styles go here */
+	img#p {position:absolute;top:20px;}
+	button{position:absolute;top:100px;}
+	</style>
+	<script type="text/javascript">
+
+	var pos = 20;
+	var planecontrol, flyflag; 
+	flyflag=0;
+	function flyplane(){
+
+		const myplane=document.getElementById("p");
+		myplane.style.left=pos+"px";
+		pos= pos+5; 
+		if (pos>1000)
+		{
+			pos = 20;
+		}
+		flyflag=1;
+		/*flag will be one when the plane is flying*/
+		planecontrol=setTimeout("flyplane()",50);
+		
+	}
+
+	function startstop()
+	{
+		if (flyflag==1)
+		{
+			clearTimeout(planecontrol);
+			/*we know what is being animated and can stop it*/
+			flyflag=0;
+		}
+		else 
+		{
+			planecontrol=setTimeout("flyplane()",25);
+		}
+
+		/*=== also defines what it is*/
+
+
+
+
+
+
+	}
+
+
+	</script>
+	
+	
+  </head>
+
+  <body>
+	<!-- Your HTML goes here -->
+	<img id="p" src="flying-1.jpg" alt="Flying Plane" title = "Fly the Friendly Skies" ></img>
+
+	<button onclick="flyplane()">Click here to Start</button>
+		
+	
+	
+  </body>
+</html>
