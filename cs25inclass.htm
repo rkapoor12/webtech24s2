@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>J Query Plug-ins(Arc Text)</title>
+
+	<style>
+	/* Your styles go here */
+	h1#h11{font-family:'Lucida Sans';color:navy;text-align:center;margin-left:300px;margin-top:100px;}
+	h2#h21{font-family:Arial;color:darkgreen;text-align:center;margin-left:450px;margin-top:250px}
+	.animate-typing{color:red;font-family:Arial;font-size:x-large;text-align:center}
+	</style>
+	
+	
+		<script src=https://code.jquery.com/jquery.min.js type="text/javascript"></script>
+		<script src="jquery.arctext.js" type="text/javascript"></script>
+	
+		<script type="text/javascript">
+		$(function(){ /*this is the start of the API */
+
+		$("h1#h11").click(function(){
+			$(this).arctext({radius:300,dir:1});
+			$("h2#h21").arctext({radius:400,dir:-1});
+
+		}); 
+		
+		})
+		</script>
+	
+  </head>
+
+  <body>
+	<!-- Your HTML goes here -->
+		<h1 id="h11">Thank you all for a great semester</h1>
+		<h2 id="h21"> Goodluck with everything!! </h2>
+		<div
+        class="animate-typing"
+        data-animate-loop="true"
+        data-type-speed="200"
+        data-type-delay="200"
+        data-remove-speed="50"
+        data-remove-delay="500"
+        data-cursor-speed="200">
+		I agree to abide by the Babson Honor Code so help me God!!!
+    </div>
+	<script src="jquery.animateTyping.js" type="text/javascript"> </script>
+  </body>
+</html>
