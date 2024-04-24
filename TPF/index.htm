@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html><head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+	<meta name="description" content =" Index Page " name="author" content="Riya Kapoor"  name="keywords" content="Travel Blogs;
+	Spain and Indonesia Travel  recommendations; Sightseeing in Indonesia, Travelling in Spain"></meta>
+	<title>Home</title>
+	<link rel="stylesheet" href="Menu.css" type="text/css">
+
+	</head>
+
+	<style type="text/css">
+		div#A1{margin-right:20%; margin-left:30%;}
+		img{margin-left:30%;margin-right:20%;margin-top:5%}
+		h3{text-align:center}
+		
+	</style>
+	<script src=https://code.jquery.com/jquery.min.js type="text/javascript"></script>
+	<script src="jquery.arctext.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+ $(function(){ /*this is the start of the API */
+
+$("h3#h11").click(function(){
+	$(this).arctext({radius:300,dir:1});
+
+}); 
+
+})
+ 
+ function makeBig()
+          {
+
+               var myimg;
+               myimg=document.getElementById("index");
+               if (myimg.width ==200)
+               {
+                    myimg.width=myimg.width*1.2;
+               }
+
+               else 
+               {
+                    myimg.width=myimg.width/1.2;
+               }
+          }
+
+
+	</script>
+  </head>
+
+  <body>
+
+<!--FOR THE MENU BOARD* (DO NOT EDIT)-->
+<div id="banner">
+	<h1 id="Menuheading">Riya's Travel Diary</h1>
+
+
+</div>
+
+<div id="mbar">
+	<a href="index.htm" class="menu">Home</a>
+	<a href="AboutMe.htm" class="menu">About Me</a>
+	<div class="menu">Bali</a> 
+		<ul>
+			<li> <a href="Bali.htm">Read Me First</a></li>
+			<li> <a href="NusaPenida.htm"> Nusa Penida</a></li>
+			<li> <a href="LovinaBeach.htm"> Lovina Beach</a></li>
+		</ul>
+	</div>
+	<div class="menu"> Barcelona</a> 
+		<ul>
+			<li> <a href="Barcelona.htm">Read Me First</a></li>
+			<li> <a href="SagradaFamilia.htm">La Sagrada Familia</a></li>
+			<li> <a href="BoqueriaMarket.htm"> La Boqueria Market </a></li>
+		</ul>
+	</div>
+	<div class="menu">Flores</a> 
+		<ul>
+			<li> <a href="Flores.htm">Read Me First </a></li>
+			<li> <a href="KomodoDragon.htm">Komodo Dragon Island</a></li>
+			<li> <a href="Padar Island.htm"> Padar Island and Pink Beach</a></li>
+		</ul>
+	</div>
+	<a href="ContactMe.html" class="menu">Contact Me</a>
+	<a href="Sitemap.htm" class="menu">Sitemap</a>
+	<a href="Credits.htm" class="menu">Credits</a>
+</div>
+<!--FOR THE MENU BOARD* (DO NOT EDIT)-->
+<audio autoplay="autoplay" controls>
+    <source src="Mkto.mp3" type="audio/mp3" />
+</audio>
+<div id = A1>
+<p> Hi! Whether you're a seasoned traveler or just embarking on your first adventure, 
+	I'm thrilled to have you join me on this journey through Riya's Travel Diary! 
+	Together, we'll explore breathtaking destinations, uncover hidden gems, and 
+	share unforgettable experiences. </br>
+</br>
+	
+<button> <a href="AboutMe.htm"> About Me </a> </button>
+
+<h3 id="h11" >My most recent trip to Bali, Indonesia in December 2023! </h3>
+<img id="index" onclick="makeBig()" src="index.jpg" alt="Index Image" title="Index" width="200"/>
+ 
+<p> 
+1: Index page: When you click on the photo, it will get bigger </br>
+2: About Me page: Click on the text "Welcome!" for it to change to "I am so excited to have you hear!!!" </br>
+3: Contact Me page: When you enter the information into the form, it will also result in a new output in "Your Provided information"</br>
+4:Boqueria Market page: Slide show of images </br>
+5:Barcelona (Read me First) page: scrolling text of title 'Barcelona'</br>
+6:Bali(Read me First) page: Rupiah/Dollar or Dollar/Rupiah converter at the bottom of the page</br>
+7:Pink Beach and Padar Island page: Mouse over the title to turn pink! </br>
+8: (Jquery) Index page: click on the heading "My most recent trip to Bali, Indonesia in December 2023!" for it to arch</br>
+(Jquery) Sagrada Familia page: Picture flipping </br>
+
+
+</p>
+</div>
+</body></html>
